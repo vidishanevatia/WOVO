@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+
+<group>
+        <item android:title="PROFILE">
+            <menu>
+        <item
+            android:id="@+id/my_info"
+            android:icon="@drawable/my_info"
+            android:title="My Info" />
+            </menu>
+    </item>
+
+    <item android:title="SUPPORT">
+        <menu>
+            <item
+                android:id="@+id/support"
+                android:icon="@drawable/support"
+                android:title="Help or Report a Problem" />
+        </menu>
+    </item>
+
+    <item android:title="ABOUT">
+        <menu>
+            <item
+                android:id="@+id/terms"
+                android:icon="@drawable/terms"
+                android:title="Terms of Service" />
+            <item
+                android:id="@+id/privacy_policy"
+                android:icon="@drawable/privacy"
+                android:title="Privacy Policy" />
+
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/about"
+                android:title="About" />
+        </menu>
+    </item>
+
+        <item android:title="ACCOUNT">
+        <menu>
+            <item
+                android:id="@+id/change_password"
+                android:icon="@drawable/change_password"
+                android:title="Change Password" />
+            <item
+                android:id="@+id/sign_out"
+                android:icon="@drawable/sign_out"
+                android:title="Sign Out" />
+
+            <item
+                android:id="@+id/reset"
+                android:icon="@drawable/reset"
+                android:title="Reset Application" />
+        </menu>
+    </item>
+
+</group>
+
+
+</menu>

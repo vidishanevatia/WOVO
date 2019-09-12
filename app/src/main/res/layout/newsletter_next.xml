@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/happy"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_heading_nl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:text="Sample Nesletter 23 May 2019"
+        android:textStyle="bold"
+        android:textColor="@color/FontColor"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_date_nl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:text="5/23/2019"
+        android:textColor="@color/Primary"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_nt_nl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:text="Sample Nesletter testing 23 May 2019"
+        android:textColor="@color/FontColor"/>
+
+    <Button
+        android:id="@+id/bt_connect"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rectangleborder"
+        android:text="CONNECT"
+        android:textStyle="bold"
+        android:textColor="@color/FontColor"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+
+
+</LinearLayout>

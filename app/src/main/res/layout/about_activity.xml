@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/FontColor"
+        android:text="WOVO"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sdp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Build Version: 1.0.0"
+        android:textStyle="bold"
+        android:textColor="@color/FontColor"
+        android:textSize="@dimen/_15sdp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copyright 2017"
+        android:textStyle="bold"
+        android:textColor="@color/FontColor"
+        android:textSize="@dimen/_15sdp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All rights reserved"
+        android:textStyle="bold"
+        android:textColor="@color/FontColor"
+        android:textSize="@dimen/_15sdp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="For more information, contact:"
+        android:textColor="@color/FontColor"
+        android:textSize="@dimen/_12sdp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="info@workplaceoptions.com"
+        android:textColor="@color/FontColor"
+        android:textSize="@dimen/_12sdp"/>
+
+
+
+
+</LinearLayout>

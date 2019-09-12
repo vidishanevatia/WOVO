@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/_20sdp"
+    android:layout_marginRight="@dimen/_20sdp"
+    >
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_prob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Where did the problem occur?"
+        android:textColor="@color/FontColor"
+        android:layout_marginTop="@dimen/_40sdp"
+
+        />
+
+    <Spinner
+        android:id="@+id/spin_prob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_prob"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:layout_below="@id/spin_prob"
+        android:textColor="@color/FontColor"
+        android:layout_marginTop="@dimen/_30sdp"
+
+        />
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@id/tv_description"
+        android:inputType="textImeMultiLine"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/border"
+        />
+
+    <ImageButton
+        android:id="@+id/ib_attach"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@id/et_description"
+        android:background="@drawable/attach"
+         />
+
+    <Button
+        android:id="@+id/bt_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/_60sdp"
+        android:background="@drawable/registerborder"
+        android:text="REPORT"
+        android:textColor="@color/white" />
+
+
+
+</RelativeLayout>

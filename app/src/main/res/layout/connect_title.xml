@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/_20sdp"
+    android:layout_marginRight="@dimen/_20sdp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_mt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message Type"
+        android:textColor="@color/FontColor"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/spin_mt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_mt"
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textColor="@color/FontColor"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/spin_mt"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/spin_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_category"
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/FontColor"
+        android:layout_below="@id/spin_category"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/et_question"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/border"
+        android:layout_below="@id/tv_question"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:background="@drawable/registerborder"
+        android:text="SEND"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

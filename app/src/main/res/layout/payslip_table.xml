@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/tl_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tl_ps"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TableRow
+android:id="@+id/tr_1"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+>
+
+<TextView
+    android:id="@+id/tv_dp"
+android:background="@drawable/rowbackground"
+android:text="December Payslips"
+android:layout_width="@dimen/_120sdp"/>
+
+<TextView
+    android:id="@+id/tv_d"
+android:text="December"
+android:background="@drawable/rowbackground"
+android:layout_width="@dimen/_70sdp"/>
+
+<TextView
+    android:id="@+id/tv_status"
+android:text="Read"
+android:background="@drawable/rowbackground"
+android:layout_width="@dimen/_66sdp"/>
+
+
+</TableRow>
+
+</TableLayout>

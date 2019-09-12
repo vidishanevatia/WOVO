@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_height="105dp"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    card_view:cardCornerRadius="15dp"
+    android:clickable="true"
+    card_view:cardElevation="16sdp"
+    card_view:cardMaxElevation="20dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="@dimen/_12sdp"
+
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_root_view"
+        >
+
+        <ImageView
+            android:id="@+id/Pic"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/circletick"
+            android:layout_marginRight="@dimen/_10sdp"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:id="@+id/idd"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/Pic"
+            android:text="CASE ID 597: Suggest"
+            android:textColor="@color/FontColor"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idd"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toEndOf="@id/Pic"
+            android:text="Thursday"
+            android:textSize="16sp"
+            android:textColor="@color/barDown"/>
+
+
+
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_toEndOf="@+id/Pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/day"
+            android:gravity="center"
+            android:textColor="@color/FontColor"
+            android:text="Status: In Progress"
+            android:textSize="16sp"/>
+
+        <TextView
+        android:id="@+id/regards"
+        android:layout_toEndOf="@+id/Pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status"
+        android:gravity="center"
+        android:textColor="@color/FontColor"
+        android:text="Thanks"
+        android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/Pic2"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            app:srcCompat="@drawable/rightarrow"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_10sdp"/>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

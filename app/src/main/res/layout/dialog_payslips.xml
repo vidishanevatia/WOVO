@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="@dimen/_200sdp"
+    android:layout_height="@dimen/_150sdp"
+    android:background="@drawable/curvedrectangle"
+    android:gravity="center"
+    >
+
+    <EditText
+        android:id="@+id/et_ei"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:hint="Employee ID"
+        android:gravity="center"
+        android:background="@drawable/border"/>
+
+    <Button
+        android:id="@+id/bt_es"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@id/et_ei"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/registerborder"
+        android:textColor="@color/white"
+        android:text="SUBMIT"
+        android:textSize="@dimen/_15sdp"/>
+
+</RelativeLayout>

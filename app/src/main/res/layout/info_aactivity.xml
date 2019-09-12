@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="@dimen/_12sdp"
+    android:layout_marginLeft="@dimen/_12sdp" >
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_disclaimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:textColor="@color/FontColor"
+        android:text="The below displayed personal information will not be shared with your company.This is only for your information."
+        android:textAlignment="center"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/tv_pn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHONE NUMBER"
+        android:layout_below="@id/tv_disclaimer"
+        android:layout_marginTop="@dimen/_20sdp" />
+
+    <TextView
+        android:id="@+id/tv_pnbox"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_23sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_12sdp"
+        android:text="+917979797979"
+        android:background="@drawable/border"
+        android:layout_below="@+id/tv_pn"
+        android:textColor="@color/light_gray"/>
+
+    <TextView
+        android:id="@+id/tv_lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LANGUAGE"
+        android:layout_below="@id/tv_pnbox"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+    <Spinner
+        android:id="@+id/sp_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_lang" />
+
+    <TextView
+        android:id="@+id/tv_timezone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIMEZONE"
+        android:layout_below="@id/sp_language"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+    <Spinner
+        android:id="@+id/sp_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_timezone" />
+
+    <TextView
+        android:id="@+id/tv_cc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMPANY CODE"
+        android:layout_below="@id/sp_time"
+        android:layout_marginTop="@dimen/_20sdp" />
+
+    <TextView
+        android:id="@+id/tv_ccbox"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_23sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_12sdp"
+        android:text="136747"
+        android:background="@drawable/border"
+        android:layout_below="@+id/tv_cc"
+        android:textColor="@color/light_gray"/>
+
+    <TextView
+        android:id="@+id/tv_ei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMPLOYEE ID"
+        android:layout_below="@id/tv_ccbox"
+        android:layout_marginTop="@dimen/_20sdp" />
+
+    <TextView
+        android:id="@+id/tv_eibox"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_23sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_12sdp"
+        android:text="Sonia"
+        android:background="@drawable/border"
+        android:layout_below="@+id/tv_ei"
+        android:textColor="@color/light_gray"/>
+
+    <Button
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/registerborder"
+        android:layout_below="@id/tv_eibox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="SUBMIT"
+        android:textColor="@color/white"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_heading"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:text="    QA Test 20190111"
+        android:textSize="@dimen/_20sdp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Are you happy with our service?"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_below="@id/tv_heading"
+        android:textSize="@dimen/_15sdp" />
+
+    <RadioGroup
+        android:id="@+id/rg_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_q1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        >
+    <RadioButton
+        android:id="@+id/rb_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="  Very Satisfied"
+        android:layout_marginTop="10dp"
+        android:checked="false"
+        android:textSize="20dp"
+        android:textColor="@color/FontColor"
+        android:buttonTint="@color/Primary"
+       />
+
+    <RadioButton
+        android:id="@+id/rb_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="  Satisfied"
+        android:layout_marginTop="20dp"
+        android:checked="false"
+        android:textSize="20dp"
+        android:textColor="@color/FontColor"
+        android:buttonTint="@color/Primary"/>
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="  Neither satisfied nor dissatisfied"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:textSize="20dp"
+            android:textColor="@color/FontColor"
+            android:buttonTint="@color/Primary"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="  Dissatisfied"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:textSize="20dp"
+            android:textColor="@color/FontColor"
+            android:buttonTint="@color/Primary"/>
+
+        <RadioButton
+            android:id="@+id/rb_5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="  Very Dissatisfied"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:textSize="20dp"
+            android:textColor="@color/FontColor"
+            android:buttonTint="@color/Primary"/>
+
+</RadioGroup>
+
+    <Button
+        android:id="@+id/bt_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/greenbox"
+        android:layout_below="@id/rg_options"
+        android:text="DONE"
+        android:textColor="@color/white"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="0 of 1 answered"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

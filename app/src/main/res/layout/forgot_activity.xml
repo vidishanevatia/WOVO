@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_statement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:textColor="@color/FontColor"
+        android:text="Enter the Employee ID and Company Code to generate the verification code"
+        android:textAlignment="center"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_80sdp"/>
+
+    <EditText
+        android:id="@+id/et_ee"
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:hint="Employee ID"
+        android:layout_below="@id/tv_statement"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:background="@drawable/border"/>
+
+    <EditText
+        android:id="@+id/et_cc"
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:hint="Company Code"
+        android:layout_below="@id/et_ee"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/border"/>
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:text="Submit"
+        android:background="@drawable/registerborder"
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_cc"
+        android:layout_marginTop="@dimen/_60sdp"/>
+
+
+</RelativeLayout>

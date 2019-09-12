@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Hello! Register to get started."
+        android:textColor="@color/FontColor"
+        android:textSize="@dimen/_15sdp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_below="@+id/tv_hello"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/border"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_centerInParent="true">
+        <View
+            android:id="@+id/v_1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:background="@color/FontColor" />
+    <EditText
+        android:id="@+id/et_cc"
+        android:layout_below="@+id/v_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_centerHorizontal="true"
+       android:background="@color/white"
+        android:hint="Company Code"
+        />
+
+        <View
+            android:id="@+id/v_2"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/et_cc"
+            android:background="@color/FontColor" />
+
+
+    <EditText
+        android:id="@+id/et_ee"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/v_2"
+        android:layout_centerInParent="true"
+        android:hint="Employee ID"
+        android:background="@color/white"
+
+        />
+
+        <View
+            android:id="@+id/v_3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/et_ee"
+            android:background="@color/FontColor" />
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/spin_no"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/v_3"
+        android:background="@color/white"
+        android:inputType="phone"
+        android:textColor="@color/FontColor"
+        android:textSize="@dimen/_15sdp"
+        />
+
+    <EditText
+        android:id="@+id/et_pn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_below="@+id/v_3"
+        android:hint="Phone Number"
+        android:background="@color/white"
+        android:inputType="phone"
+        />
+
+        <View
+            android:id="@+id/v_4"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/et_pn"
+            android:background="@color/FontColor" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/v_4"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@color/white"
+
+        />
+
+        <View
+            android:id="@+id/v_5"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/et_password"
+            android:background="@color/FontColor" />
+
+    <EditText
+        android:id="@+id/et_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/v_5"
+        android:hint="Confirm Password"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:background="@color/white"/>
+
+
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:layout_below="@+id/rl"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Register"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@Fonts/Roboto-Bold.ttf"
+        android:background="@drawable/registerborder" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_accexists"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_register"
+        android:text="Already have an account?"
+        android:textStyle="bold"
+        android:textColor="@color/FontColor"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_register"
+        android:layout_alignRight="@+id/tv_accexists"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginRight="-46dp"
+        android:textColor="@color/Primary"
+        android:fontFamily="@Fonts/Roboto-Black.ttf"
+        android:text="Login" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_statement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_accexists"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="By registering, you agree to the below: "
+        android:textColor="@color/FontColor"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:textStyle="bold"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_tos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_statement"
+        android:layout_below="@+id/tv_accexists"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Terms of Service"
+        android:textColor="@color/Primary"
+        />
+
+    <TextView
+        android:id="@+id/tv_and"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_statement"
+       android:layout_marginLeft="@dimen/_130sdp"
+        android:text="and  "
+        android:textColor="@color/FontColor"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_pp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_statement"
+        android:layout_toRightOf="@+id/tv_and"
+        android:text="Privacy Policy"
+        android:textColor="@color/Primary"
+      />
+
+
+
+
+
+</RelativeLayout>
